@@ -1,0 +1,13 @@
+.player{
+  margin-bottom: 50px;
+  & .inputs{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  & .more-inputs{
+    margin-top:20px;
+    
+  }
+}
