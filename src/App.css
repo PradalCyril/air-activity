@@ -3,3 +3,12 @@
   width: 200px;
   height: 113px;
 }
+  
+body{padding: 20px 12.5% 0 12.5%;}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+}
