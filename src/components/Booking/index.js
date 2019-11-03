@@ -1,19 +1,11 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import RegisterPlayer from './RegisterPlayers';
+import NumberPlayers from './NumberPlayers';
 
 const Booking = () => (
   <div className='booking'>
     <Switch>
-      <Route
-        exact
-        path='/booking'
-        render={() => (
-          <Redirect
-            to={`/booking/register/3`}
-          />
-        )}
-      />
       <Route
         exact
         path='/booking/register'
@@ -23,7 +15,7 @@ const Booking = () => (
           />
         )}
       />
-      {/* <Route path='/booking/list' component={ChooseActivity} /> */}
+      <Route exact path='/booking' component={NumberPlayers} />
       <Route path='/booking/register/:numberPlayer' component={RegisterPlayer} />
       {/* <Route path='/booking/?' component={} /> */}
     </Switch>

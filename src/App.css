@@ -1,7 +1,7 @@
 
 .App-logo{
-  width: 200px;
-  height: 113px;
+  width: 150px;
+  height: 85px;
 }
   
 body{padding: 20px 12.5% 0 12.5%;}
@@ -11,4 +11,31 @@ body{padding: 20px 12.5% 0 12.5%;}
   justify-content: space-between;
   align-items: flex-end;
   
+}
+
+.language-btn{
+  font-size: 0.90em;
+  color: rgb(107, 107, 107);
+  padding: 10px 0 10px 20px;
+  border: none;
+}
+
+.language-btn:hover, .language-btn:focus{
+  outline: none;
+}
+.language-text:hover, .link-btn:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color:black;
+}
+.language-text{
+  margin:10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  border-right: 0.1rem solid hsla(0,0%,59%,.55);
+}
+
+.link-btn{
+  padding: 0 0 0 20px;
+  color: rgb(107, 107, 107);
+  text-decoration: none;
 }

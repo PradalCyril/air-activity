@@ -28,10 +28,10 @@ class Player extends Component {
   render() {
     const { firstName, lastName, email, phoneNumber } = this.state;
     const { playerNumber } = this.props;
-    const inputFirstName = inputName(firstName, this.updateState, 'firstName')
-    const inputLastName = inputName(lastName, this.updateState, 'lastName');
-    const inputMail = inputEmail(email, this.updateState);
-    const inputPhone = inputPhoneNumber(phoneNumber, this.updateState);
+    const inputFirstName = inputName(firstName, this.updateState, 'firstName', this.props.language)
+    const inputLastName = inputName(lastName, this.updateState, 'lastName', this.props.language);
+    const inputMail = inputEmail(email, this.updateState, this.props.language);
+    const inputPhone = inputPhoneNumber(phoneNumber, this.updateState, this.props.language);
     return (
       <div className='player'>
         {`Player ${playerNumber+1}: `}
@@ -48,7 +48,11 @@ class Player extends Component {
   }
 }
 
+const mapStateToProps = state => ({
+  language: state.user.language
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Player);
