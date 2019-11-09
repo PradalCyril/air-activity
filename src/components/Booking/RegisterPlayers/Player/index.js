@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import {withRouter} from 'react-router-dom';
 import { connect } from 'react-redux';
 import './index.scss';
 import { inputPhoneNumber, inputName, inputEmail } from '../../../Generic/Form';
+import { translate } from '../../../../translate/translate';
+import * as playersActions from '../../../../actions/playersActions';
+import { bindActionCreators } from 'redux';
 
 const mapDispatchToProps = (dispatch) => ({
-
+  playersActions: bindActionCreators(playersActions, dispatch)
 })
 
 class Player extends Component {
@@ -34,7 +38,7 @@ class Player extends Component {
     const inputPhone = inputPhoneNumber(phoneNumber, this.updateState, this.props.language);
     return (
       <div className='player'>
-        {`Player ${playerNumber+1}: `}
+        {`${translate(this.props.language, 'Player')} ${playerNumber+1}: `}
         <div className='inputs' >
           {inputFirstName}
           {inputLastName}
@@ -52,7 +56,7 @@ const mapStateToProps = state => ({
   language: state.user.language
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(Player);
+)(Player));

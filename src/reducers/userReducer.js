@@ -14,6 +14,14 @@ const user = (state = initialState, action) => {
         ...state,
         language: lang
       }
+    case 'ACTIVITY_CHOOSED': 
+      return {...state, 
+        activity: action.payload
+      }
+      case 'SELECT_DATE': 
+      return {...state, 
+        dateSelected: action.payload
+      }
     default:
       return state;
   }

@@ -39,3 +39,15 @@ body{padding: 20px 12.5% 0 12.5%;}
   color: rgb(107, 107, 107);
   text-decoration: none;
 }
+
+.no-margin{
+  margin:0;
+}
+
+.text-decoration{
+  text-decoration: coral;
+}
+
+.no-text-decoration{
+  text-decoration: none;
+}

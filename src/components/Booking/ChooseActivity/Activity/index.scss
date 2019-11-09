@@ -1,0 +1,54 @@
+.activity-container{
+    transition: 0,5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    &.lasergame{
+        transition: 0,5s;
+        background: url('../../../../svg/photo5.jpg') center/200%;
+        background-repeat:no-repeat;
+    &:hover, &:active{
+        transition: 0.5s;
+        background: url('../../../../svg/photo5.jpg') center/250%;
+    }
+}&.escapegame{
+    background: url('../../../../svg/photo1.jpg') center/200%;
+    background-repeat:no-repeat;
+    &:hover, &:active{
+        transition: 0.5s;
+        background: url('../../../../svg/photo1.jpg') center/250%;
+    }
+}&.guidedtour{
+    background: url('../../../../svg/image2.jpg') center/200%;
+    background-repeat:no-repeat;
+    &:hover, &:active{
+        transition: 0.5s;
+        background: url('../../../../svg/image2.jpg') center/250%;
+    }
+}
+}
+.activity-display-text{
+    transition: 0,5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    width:75%;
+    height: 75%;
+}
+.activity-display-text-active{
+    transition: 0,5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:75%;
+    height: 75%;
+    background-color: #294E6E;
+    color: white;
+}
+.activity-title{
+font-size: 1.5rem;
+}

@@ -34,7 +34,7 @@
     color: #294E6E;
     padding:10px;
     border: 1px solid #294E6E;
-    &:hover{
+    &:hover, &:active{
       background-position: 100%;
       color: white;
     }

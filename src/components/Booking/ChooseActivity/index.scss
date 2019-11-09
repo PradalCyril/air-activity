@@ -1,0 +1,21 @@
+.activities-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.activity-List{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.no-decoration{
+    text-decoration: none;
+    color: #294E6E;
+}
+
+.btn-activity-booking-taille{
+    height: 350px;
+    width: 30%;
+}

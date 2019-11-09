@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Switch, Route, Redirect, Link } from 'react-router-dom';
+import { Switch, Route, Redirect, Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import './App.css';
@@ -10,6 +10,8 @@ import Booking from './components/Booking';
 import Navbar from './components/NavBar';
 import * as userActions from './actions/userActions';
 import { translate } from './translate/translate';
+import Activities from './components/Activities';
+import Teams from './components/Teams';
 
 class App extends Component {
     render() {
@@ -41,7 +43,9 @@ class App extends Component {
                         )}
                     />
                     <Route path='/home' component={HomePage} />
+                    <Route path='/activities' component={Activities} />
                     <Route path='/booking' component={Booking} />
+                    <Route path='/teams' component={Teams} />
                 </Switch>
             </div>
         );
@@ -55,7 +59,7 @@ const mapDispatchToProps = dispatch => ({
     userActions: bindActionCreators(userActions, dispatch)
 });
 
-export default connect(
+export default withRouter(connect(
     mapStateToProps,
     mapDispatchToProps
-)(App);
+)(App));

@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import './index.scss';
 import Player from './Player';
 
@@ -18,4 +19,4 @@ const RegisterPlayer = (props) => {
   )
 }
 
-export default RegisterPlayer;
+export default withRouter(RegisterPlayer);
