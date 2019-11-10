@@ -45,9 +45,9 @@ export const fr = {
 }
 
 export const en = {
-    definitionAirActivity: "Air activity is an agency located at Roissy Charles de Gaulle airport in Paris. This agency offers you different activities, outside, to entertain you during your long stopovers." +
-        "You do not need to be stressed for the trip, it is entirely under control and at our charge. So you won't miss your connection." +
-        "A space is available at the agency to store your hand luggage.",
+    definitionAirActivity1: "Air activity is an agency located at Roissy Charles de Gaulle airport in Paris. This agency offers you different activities, outside, to entertain you during your long stopovers.",
+    definitionAirActivity2: "You do not need to be stressed for the trip, it is entirely under control and at our charge. So you won't miss your connection.",
+    definitionAirActivity3: "A space is available at the agency to store your hand luggage.",
     bookingBtnHomePage: 'Booking now',
     contactUs: 'Contact us',
     player: 'players',
@@ -87,6 +87,7 @@ export const en = {
     escapeText: '',
     guidedtourName: 'Guided tour',
     guidedtourText: '',
+    seeMore: 'Clic to see more'
 }
 
 

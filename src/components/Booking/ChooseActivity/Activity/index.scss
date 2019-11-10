@@ -1,16 +1,16 @@
 .activity-container{
-    transition: 0,5s;
+    transition: 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 350px;
     &.lasergame{
-        transition: 0,5s;
-        background: url('../../../../svg/photo5.jpg') center/200%;
+        transition: 0.5s;
+        background: url('../../../../svg/photo8.jpg') center/200%;
         background-repeat:no-repeat;
     &:hover, &:active{
         transition: 0.5s;
-        background: url('../../../../svg/photo5.jpg') center/250%;
+        background: url('../../../../svg/photo8.jpg') center/250%;
     }
 }&.escapegame{
     background: url('../../../../svg/photo1.jpg') center/200%;
@@ -20,16 +20,16 @@
         background: url('../../../../svg/photo1.jpg') center/250%;
     }
 }&.guidedtour{
-    background: url('../../../../svg/image2.jpg') center/200%;
+    background: url('../../../../svg/photo6.jpg') center/200%;
     background-repeat:no-repeat;
     &:hover, &:active{
         transition: 0.5s;
-        background: url('../../../../svg/image2.jpg') center/250%;
+        background: url('../../../../svg/photo6.jpg') center/250%;
     }
 }
 }
 .activity-display-text{
-    transition: 0,5s;
+    transition: 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: center;

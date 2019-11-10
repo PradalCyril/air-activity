@@ -1,10 +1,9 @@
 import React from 'react';
 import Slider from 'react-animated-slider';
 import photo1 from '../../../svg/photo1.jpg';
-import photo2 from '../../../svg/photo2.jpg';
-import photo3 from '../../../svg/photo3.jpg';
-import photo4 from '../../../svg/photo4.jpg';
-import photo5 from '../../../svg/photo5.jpg';
+import photo2 from '../../../svg/photo7.jpg';
+import photo3 from '../../../svg/photo8.jpg';
+import photo4 from '../../../svg/photo3.jpg';
 import './index.scss';
 
 
@@ -21,10 +20,7 @@ const images = [
     },
     {
         image: photo4
-    },
-    {
-        image: photo5
-    },
+    }
 ]
 const Carousel = () => (<div className='carousel-container'>< Slider infinite={true} autoplay={5000} >
     {

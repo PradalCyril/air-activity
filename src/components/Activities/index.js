@@ -1,59 +1,45 @@
-import React, {useState} from 'react';
-import {withRouter } from 'react-router-dom';
+import React, { useState } from 'react';
+import { withRouter } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import { translate } from '../../translate/translate';
 import './index.scss';
-import Activity from '../Booking/ChooseActivity/Activity';
 
 const Activities = (props) => {
     const language = useSelector(state => state.user.language)
-   const [activity, setActivity] = useState('')
+    const [activities, setActivities] = useState({text: ''
+        , isActive: ''})
     return (<div className='activities-container'>
-        <div className='activity-List'>
+        <div className='activities-List'>
             <div
-                className='no-decoration btn-activity-booking-taille'
-                onClick={()=> setActivity('escapeText')}
+                className='no-decoration btn-activities-booking-taille'
+                onClick={() => setActivities({text: 'escapeText', isActive: 'active'})}
             >
-                <Activity
-                    type='escapegame'
-                    title={
-                        translate(language, 'escapeName')
-                    }
-                    text={
-                        translate(language, 'seeMore')
-                    }
-                />
+                <div className='activities-display-text'>
+                    <h4 className='activities-title'>{translate(language, 'escapeName')}</h4>
+                    <p>{translate(language, 'seeMore')}</p>
+                </div>
             </div>
             <div
-                className='no-decoration btn-activity-booking-taille'
-                onClick={()=> setActivity('laserText')}
+                className='no-decoration btn-activities-booking-taille'
+                onClick={() => setActivities({text: 'laserText', isActive: 'active'})}
             >
-                <Activity
-                    type='lasergame'
-                    title={
-                        translate(language, 'laserName')
-                    }
-                    text={
-                        translate(language, 'seeMore')
-                    }
-                />
+                <div className='activities-display-text'>
+                    <h4 className='activities-title'>{translate(language, 'laserName')}</h4>
+                    <p>{translate(language, 'seeMore')}</p>
+                </div>
             </div>
             <div
-                className='no-decoration btn-activity-booking-taille'
-                onClick={()=> setActivity('guidedtourText')}
+                className='no-decoration btn-activities-booking-taille'
+                onClick={() => setActivities({text: 'guidedtourText', isActive: 'active'})}
             >
-                <Activity
-                type='guidedtour'
-                    title={
-                        translate(language, 'guidedtourName')
-                    }
-                    text={
-                        translate(language, 'seeMore')
-                    } />
+                <div className='activities-display-text'>
+                    <h4 className='activities-title'>{translate(language, 'guidedtourName')}</h4>
+                    <p>{translate(language, 'seeMore')}</p>
+                </div>
             </div>
         </div>
-        <div>
-            {translate(language, activity)}
+        <div className={`no-active ${activities.isActive}`}>
+            {translate(language, activities.text)}
         </div>
     </div>
     )

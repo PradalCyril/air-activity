@@ -1,0 +1,38 @@
+.activities-display-text{
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding: 25px;
+    background-color: rgb(224, 224, 224);
+    &:hover{
+    transition: 0.25s;
+    background-color: #294E6E;
+    color: white;
+    }
+}
+
+.btn-activity-booking-taille{
+    height: 350px;
+    width: 30%;
+}
+
+.activities-List{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.no-active{
+    transition: 0.5s;
+    display:none;
+    background-color: red;
+    &.active{
+        transition: 0.5s;
+        display: flex;
+        color:white;
+    }
+}

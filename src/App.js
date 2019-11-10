@@ -12,6 +12,7 @@ import * as userActions from './actions/userActions';
 import { translate } from './translate/translate';
 import Activities from './components/Activities';
 import Teams from './components/Teams';
+import ContactUs from './components/ContactUs';
 
 class App extends Component {
     render() {
@@ -28,7 +29,7 @@ class App extends Component {
                         >
                             <p className='language-text'>{`France-${this.props.language.toUpperCase()}`}</p>
                         </button>
-                        <Link to='/' className='link-btn'>{translate(this.props.language, 'contactUs')}</Link>
+                        <Link to='/contact' className='link-btn'>{translate(this.props.language, 'contactUs')}</Link>
                     </div>
                 </div>
                 <Navbar language={this.props.language}/>
@@ -46,6 +47,7 @@ class App extends Component {
                     <Route path='/activities' component={Activities} />
                     <Route path='/booking' component={Booking} />
                     <Route path='/teams' component={Teams} />
+                    <Route path='/contact' component={ContactUs} />
                 </Switch>
             </div>
         );
