@@ -1,24 +1,21 @@
 .activities-display-text{
     transition: 0.25s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin:0;
-    padding: 25px;
-    background-color: rgb(224, 224, 224);
-    &:hover{
-    transition: 0.25s;
-    background-color: #294E6E;
-    color: white;
-    }
+    margin:0 0 50px 0;
+    height:100%;
+    border-top: 4px solid #294E6E ;
+    border-bottom: 4px solid #C70B0C ;
+    border-radius: 100px 0px 100px 0px;
 }
 
-.btn-activity-booking-taille{
-    height: 350px;
+.btn-activities-booking-taille-1{
     width: 30%;
 }
-
+.btn-activities-booking-taille-2{
+    width: 30%;
+}.btn-activities-booking-taille-3{
+    width: 30%;
+}
 .activities-List{
     width: 100%;
     display: flex;
@@ -27,12 +24,39 @@
 }
 
 .no-active{
-    transition: 0.5s;
     display:none;
-    background-color: red;
-    &.active{
+}
+.activities-active{
         transition: 0.5s;
+        height: 3rem;
         display: flex;
+        justify-content: flex-start;
         color:white;
     }
+
+.guide-tour-option{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.activities-title{
+    text-align: center;
+    color: #C70B0C;
+    text-decoration: underline;
+}
+
+.activities-container{
+    color: #294E6E;
+}
+
+.image-resize{
+    border-radius: 97px 0px 100px 0px;
+    width:100%;
+    position: (0%,0%);
+}
+
+.laser-option, .guide-tour-option, .escape-option{
+    width:93%;
+    font-size: 0.90em;
 }

@@ -27,11 +27,14 @@ class Player extends Component {
     });
   }
   handleSubmit = () => {
-
+    this.props.playersActions.setUserList(this.state, this.props.playerNumber)
   }
   render() {
     const { firstName, lastName, email, phoneNumber } = this.state;
-    const { playerNumber } = this.props;
+    const { playerNumber, isCreated } = this.props;
+    if(isCreated){
+      this.handleSubmit();
+    }
     const inputFirstName = inputName(firstName, this.updateState, 'firstName', this.props.language)
     const inputLastName = inputName(lastName, this.updateState, 'lastName', this.props.language);
     const inputMail = inputEmail(email, this.updateState, this.props.language);

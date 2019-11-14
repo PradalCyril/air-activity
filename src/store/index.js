@@ -1,8 +1,10 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import user from '../reducers/userReducer';
+import players from '../reducers/playersReducer';
 
 const rootReducers = combineReducers({
-  user
+  user,
+  players
 })
 const composeEnhancers =
   typeof window === 'object' &&

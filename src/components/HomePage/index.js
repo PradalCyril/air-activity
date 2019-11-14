@@ -9,6 +9,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className='home-container'>
+        <h2>Vos escales sont trop longues ? </h2>
         <p style={{textAlign:'center'}}>{translate(this.props.language, 'definitionAirActivity1')}</p>
         <p style={{textAlign:'center'}}>{translate(this.props.language, 'definitionAirActivity2')}</p>
         <p style={{textAlign:'center'}}>{translate(this.props.language, 'definitionAirActivity3')}</p>

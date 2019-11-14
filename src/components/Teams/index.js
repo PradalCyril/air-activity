@@ -8,8 +8,7 @@ const Teams = (props) => {
     const language = useSelector(state => state.user.language)
     return (
         <div className='teams-container'>
-            <p>Notre équipe se compose de deux étudiantes en Master 1 Transmission et Développement des
-            PME à l’Institut Montpellier Management.</p>
+            <h3 className='presentation-teams'>{translate(language, 'presentationTeam')}</h3>
             <div className='teams-displayer'>
                 <div
                     className='teams-display'
@@ -25,6 +24,9 @@ const Teams = (props) => {
                         <p className='no-margin with-padding'>- La pâtisserie</p>
                     </div>
                 </div>
+                <div
+                    className='display-border-right'
+                ></div>
                 <div
                     className='teams-display'
                 >

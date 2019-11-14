@@ -36,12 +36,23 @@ export const fr = {
     saturday: 'samedi',
     sunday: 'dimanche',
     laserName: 'Laser game',
-    laserText: 'mettre petit résumé',
+    laserText1: "Le laser game est l’un des loisir pour tous dont tout le monde parle.",
+    laserText2:"Entre amis, famille ou même avec des personnes que vous ne connaissez pas encore, venez nous rejoindre afin d’essayer ce mode de divertissement.",
+    laserText3:"• À partir de 8€ / personne",
     escapeName: 'Escape game',
-    escapeText: 'mettre petit résumé',
+    escapeText1: "Que vous soyez en famille, en groupe d’amis ou même seul, l’escape game est fait pour vous. Vous cherchez à vous divertir et à vous changez les idées après de longues heures de vol épuisantes, nous avons trouvez la solution pour vous.",
+    escapeText2: "Venez vous évader au sein des mystères de l’escape game grâce à plusieurs scénarios différents. Résolvez des énigmes et trouvez les clés qui vous permettront de sortir de votre mission en 60 minutes.",
+    escapeText3: "• À partir de 22€ / personne",
     guidedtourName: 'Visite guidée',
-    guidedtourText: 'mettre petit résumé',
-    seeMore: 'Cliquez pour en savoir plus'
+    guidedtourText1: "On vous emmène découvrir le charme Parisien.",
+    guidedtourText2: "Tour Eiffel",
+    guidedtourText3: "Basilique du Sacré-Coeur",
+    guidedtourText4: "Jardin des Tuileries",
+    guidedtourText5: "• À partir de 10€ / personne",
+    seeMore: 'Cliquez pour en savoir plus',
+    activityDescription: "Venez découvrir un nouveau concept au sein de l’aéroport Charles de Gaulle",
+    presentationTeam: "Notre équipe se compose de deux étudiantes en Master 1 Transmission et Développement des "+
+            "PME à l’Institut Montpellier Management."
 }
 
 export const en = {

@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    border-radius: 100px 0 100px 0;
+    height: 70%;
     &.lasergame{
         transition: 0.5s;
         background: url('../../../../svg/photo8.jpg') center/200%;
@@ -34,7 +35,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(224, 224, 224);
+    border-top: 4px solid #294E6E ;
+    border-bottom: 4px solid #C70B0C ;
+    border-radius: 100px 0 100px 0;
+    background-color: rgba(224, 224, 224, 0.801);
     width:75%;
     height: 75%;
 }
@@ -46,7 +50,10 @@
     align-items: center;
     width:75%;
     height: 75%;
-    background-color: #294E6E;
+    border-top: 4px solid #294E6E ;
+    border-bottom: 4px solid #C70B0C ;
+    border-radius: 100px 0 100px 0;
+    background-color: rgba(41, 78, 110, 0.829);
     color: white;
 }
 .activity-title{

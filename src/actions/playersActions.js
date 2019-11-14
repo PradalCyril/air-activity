@@ -1,4 +1,4 @@
-export const setUserList = (userList) =>({
+export const setUserList = (userData, playerNumber) =>({
     type: 'SET_USERS',
-    payload: userList
+    payload: {userData, playerNumber}
 })
