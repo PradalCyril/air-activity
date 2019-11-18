@@ -12,7 +12,7 @@ const Teams = (props) => {
             <div className='teams-displayer'>
                 <div className='teams-display'>
                     <div className='name-display'>
-                        <h4 className='right-margin'>Sarah Abd-Ali</h4>
+                        <h4 className='right-margin'>Sarah Ortiz</h4>
                         <p className='no-margin'>(22 ans)</p>
                     </div>
                     <div >
@@ -29,8 +29,8 @@ const Teams = (props) => {
                     className='teams-display'
                 >
                     <div className='name-display'>
-                        <h4 className='right-margin'>Anissa Haddouch</h4>
-                        <p className='no-margin'>(21 ans)</p>
+                        <h4 className='right-margin'>Anis Pastaga</h4>
+                        <p className='no-margin'>(27 ans)</p>
                     </div>
                     <div >
                         <p className='no-margin'>Passions :</p>

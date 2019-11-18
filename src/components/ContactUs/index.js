@@ -26,17 +26,6 @@ const ContactUs = (props) => {
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <div style={{ paddingLeft: '10%', width: '100%' }}>
                     <h4 className='contact-section-title'>Nous Contacter : </h4>
-                    <div style={{ display: 'flex' }}>
-                        <p style={{ marginRight: '5%' }}> Adresse mail : </p>
-                        <p>airactivity2@gmail.com</p>
-                    </div>
-                    <div style={{ display: 'flex' }}>
-                        <p style={{ marginRight: '5%' }}>Téléphone :  </p>
-                        <div>
-                            <p>06 10 53 48 41</p>
-                            <p> 06 50 80 89 05  </p>
-                        </div>
-                    </div>
                     <p style={{ marginRight: '5%', fontWeight: 'bold', textDecoration: 'underline', textDecorationColor: '#C70B0C' }}>Laissez nous un message :  </p>
                     {!messageSend && <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
 
