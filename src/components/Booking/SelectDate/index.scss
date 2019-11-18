@@ -9,18 +9,59 @@
     text-decoration: none;
     cursor: pointer;
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: 100%;
-    color: #294E6E;
+    color: black;
+    width:14.28%;
+    border-radius: 100px;
+    &:hover{
+        color:white;
+        background-color: #294E6E;;
+    }
+    &:focus {
+        outline: none;
+        color:white;
+        background-color: #294E6E;;
+    }
+}
+
+.calendar-hour-disable{
+    display: none;
 }
 
 .calendar-hour{
+    text-decoration: none;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    color: #294E6E;
+    color: black;
+    height: 200px;
+    border-radius: 0 0 100px 100px;
+    background-color: white;
+}
+
+.link-hour{
+    cursor: default;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 .no-margin{
     margin:0;
+}
+
+.hour-size{
+    padding: 15px;
+    &:hover{
+        color:white;
+        border-radius: 200px;
+        background-color: #C70B0C;
+    }
 }

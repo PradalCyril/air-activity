@@ -36,3 +36,14 @@ export const inputPhoneNumber = (number, updateState, language) => (
     onChange={(e) => updateState(e)}
   />
 )
+
+
+export const inputTextArea = (message, updateState) => (
+  <textarea
+    className='connexion-input-area'
+    name='textArea'
+    placeholder='Votre message....'
+    value={message}
+    onChange={(e) => updateState(e)}
+  />
+)

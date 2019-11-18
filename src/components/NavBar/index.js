@@ -16,7 +16,7 @@ return(
   <div className='navbar-container'>
     <Link className ={classNameHome} to='/'><p className='text-link'>{translate(props.language, 'home')}</p></Link>
     <Link className ={classNameActivity} to='/activities'><p className='text-link'>{translate(props.language, 'activity')}</p></Link>
-    <Link className ={classNameBooking} to='/booking/select-activities'><p className='text-link'>{translate(props.language, 'booking')}</p></Link>
+    <Link className ={classNameBooking} to='/booking/check-escale'><p className='text-link'>{translate(props.language, 'booking')}</p></Link>
     <Link className ={classNameTeam} to='/teams'><p className='text-link'>{translate(props.language, 'team')}</p></Link>
   </div>
 )

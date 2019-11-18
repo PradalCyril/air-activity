@@ -13,6 +13,7 @@ import { translate } from './translate/translate';
 import Activities from './components/Activities';
 import Teams from './components/Teams';
 import ContactUs from './components/ContactUs';
+import ConfirmPage from './components/Booking/ConfirmPage';
 
 class App extends Component {
     render() {
@@ -21,7 +22,7 @@ class App extends Component {
                 <div className='header-container'>
                     {/* <img src={logoJPG} className="App-logo" alt="logo" />*/}
                     <img src={logoSVG} className="App-logo" alt="logo" />
-                    <div>
+                    <div className='div-no-name'>
                         <button
                             type='language'
                             className='language-btn'
@@ -47,7 +48,8 @@ class App extends Component {
                     <Route path='/activities' component={Activities} />
                     <Route path='/booking' component={Booking} />
                     <Route path='/teams' component={Teams} />
-                    <Route path='/contact' component={ContactUs} />
+                    <Route exact path='/contact' component={ContactUs} />
+                    <Route path='/contact/confirm' component={ConfirmPage} />
                 </Switch>
             </div>
         );

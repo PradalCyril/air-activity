@@ -21,24 +21,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  align-items: center;
-  color: #294E6E;
-  padding-bottom: 50px;
+    align-items: center;
+    color: #C70B0C;
+    padding-bottom: 50px;
 }
 
 .booking-link{
-  margin-top: 10px;
+    cursor: pointer;
+    margin-top: 10px;
     text-decoration: none;
-    background: linear-gradient(90deg, transparent 50%, #294E6E 50%);
+    background: linear-gradient(90deg, transparent 50%, #C70B0C 50%);
     background-size: 300%;
     background-position: 0%;
     transition: 0.5s;
     position:relative;
-    color: #294E6E;
+    color: #C70B0C;
     padding:10px;
-    border: 1px solid #294E6E;
+    border: 1px solid #C70B0C;
     &:hover, &:active{
       background-position: 100%;
       color: white;
     }
+}
+
+.section-title{
+    border-bottom: 2px solid black;
+    padding: 10px
 }

@@ -1,0 +1,49 @@
+.register-hour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-submit{
+  cursor: pointer;
+    width: 200px;
+    font-size: 1rem;
+      margin-top: 10px;
+      margin-bottom: 100px;
+      text-decoration: none;
+      background: linear-gradient(90deg, transparent 50%, #C70B0C 50%);
+      background-size: 300%;
+      background-position: 0%;
+      transition: 0.5s;
+      position:relative;
+      color: #C70B0C;
+      padding:10px;
+      border: 1px solid #C70B0C;
+      &:hover, &:active{
+        background-position: 100%;
+        color: white;
+      }
+      &:focus{
+        outline: none;
+     }
+  }
+
+  .text-error{
+border: 1px solid black;
+
+  }
+  .text-error-select-hour-top, .text-error-select-hour-bottom, .p-no-margin{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .text-error-select-hour-top{
+    padding: 10px 10px 0 10px;
+  }
+
+  .text-error-select-hour-bottom{
+    padding: 0 10px 10px 10px;
+  }

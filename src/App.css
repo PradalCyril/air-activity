@@ -15,15 +15,15 @@ body{padding: 20px 12.5% 0 12.5%;}
 
 .language-btn{
   font-size: 0.90em;
-  color: rgb(107, 107, 107);
   padding: 10px 0 10px 20px;
   border: none;
+  background-color: white;
 }
 
 .language-btn:hover, .language-btn:focus{
   outline: none;
 }
-.language-text:hover, .link-btn:hover{
+.language-text:hover{
   text-decoration: underline;
   cursor: pointer;
   color:black;
@@ -36,10 +36,15 @@ body{padding: 20px 12.5% 0 12.5%;}
 
 .link-btn{
   padding: 0 0 0 20px;
-  color: rgb(107, 107, 107);
   text-decoration: none;
-}
+  color: #545454;
 
+}
+.link-btn:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #C70B0C;
+}
 .no-margin{
   margin:0;
 }

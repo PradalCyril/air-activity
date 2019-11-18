@@ -12,7 +12,7 @@ const ChooseActivity = (props) => {
         dispatch({ type: 'ACTIVITY_CHOOSED', payload: activity })
     }
     return (<div className='activities-container'>
-        <h3 className='no-decoration'>{translate(language, 'selectActivity')}</h3>
+        <h3 className='no-decoration section-title'>{translate(language, 'selectActivity')}</h3>
         <div className='activity-List'>
             <Link
                 className='no-decoration btn-activity-booking-taille'

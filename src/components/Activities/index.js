@@ -15,7 +15,7 @@ const Activities = (props) => {
         , lasertext: 'laserText', guidetext: 'guidedtourText'
     })
     return (<div className='activities-container'>
-        <h3>{translate(language, 'activityDescription')}</h3>
+        <h3 className='section-title'>{translate(language, 'activityDescription')}</h3>
         <div className='activities-List'>
             <div
                 className='no-decoration btn-activities-booking-taille-1'
@@ -54,7 +54,9 @@ const Activities = (props) => {
                         <p style={{paddingLeft: 20, display:'flex', alignItems:'center'}}><img style={{width: 12, marginRight: 5}} src={fleche} alt='fleche'/>{translate(language, `${activities.guidetext}2` || 'seeMore')}</p>
                         <p style={{paddingLeft: 20, display:'flex', alignItems:'center'}}><img style={{width: 12, marginRight: 5}} src={fleche} alt='fleche'/>{translate(language, `${activities.guidetext}3` || 'seeMore')}</p>
                         <p style={{paddingLeft: 20, display:'flex', alignItems:'center'}}><img style={{width: 12, marginRight: 5}} src={fleche} alt='fleche'/>{translate(language, `${activities.guidetext}4` || 'seeMore')}</p>
-                        <p style={{ display:'flex', alignItems:'center'}}>{translate(language, `${activities.guidetext}5` || 'seeMore')}</p>
+                        <p style={{paddingLeft: 20, display:'flex', alignItems:'center'}}><img style={{width: 12, marginRight: 5}} src={fleche} alt='fleche'/>{translate(language, `${activities.guidetext}5` || 'seeMore')}</p>
+                        <p style={{paddingLeft: 20, display:'flex', alignItems:'center'}}><img style={{width: 12, marginRight: 5}} src={fleche} alt='fleche'/>{translate(language, `${activities.guidetext}6` || 'seeMore')}</p>
+                        <p style={{ display:'flex', alignItems:'center'}}>{translate(language, `${activities.guidetext}7` || 'seeMore')}</p>
                     </div>
 
                 </div>

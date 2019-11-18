@@ -4,6 +4,8 @@ import RegisterPlayer from './RegisterPlayers';
 import NumberPlayers from './NumberPlayers';
 import ChooseActivity from './ChooseActivity';
 import SelectDate from './SelectDate';
+import SelectHour from './SelectHour';
+import ConfirmPage from './ConfirmPage';
 
 const Booking = () => (
   <div className='booking'>
@@ -13,7 +15,7 @@ const Booking = () => (
         path='/booking'
         render={() => (
           <Redirect
-            to={`/booking/select-activities`}
+            to={`/booking/check-escale`}
           />
         )}
       />
@@ -21,7 +23,7 @@ const Booking = () => (
         path='/booking/select-date'
         render={() => (
           <Redirect
-            to={`/booking/select-activities`}
+            to={`/booking/check-escale`}
           />
         )}
       />
@@ -29,14 +31,16 @@ const Booking = () => (
         path='/booking/register'
         render={() => (
           <Redirect
-            to={`/booking/select-activities`}
+            to={`/booking/check-escale`}
           />
         )}
       />
+      <Route path='/booking/check-escale' component={SelectHour} />
       <Route path='/booking/select-activities' component={ChooseActivity} />
       <Route path='/booking/:activity/select-date' component={SelectDate} />
       <Route exact path='/booking/:activity/:hour/register' component={NumberPlayers} />
       <Route path='/booking/:activity/:hour/register/:numberPlayer' component={RegisterPlayer} />
+      <Route path='/booking/confirm' component={ConfirmPage} /> 
       {/* <Route path='/booking/?' component={} /> */}
     </Switch>
   </div>

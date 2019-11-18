@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import './index.scss';
@@ -35,6 +35,7 @@ const SelectDate = (props) => {
     const language = useSelector(state => state.user.language)
     const activity = props.match.params.activity
     const [daySelected, setDaySelected] = useState({ selected: false, day: '' });
+    const [cssHour, setCssHour] = useState({});
     const dateDay = new Date();
     let dateList = [];
     for (let i = 0; i < 7; i++) {
@@ -47,7 +48,7 @@ const SelectDate = (props) => {
         let newDay = afterDay.getDay();
         newDay = dayName[newDay];
         dateList.push((
-            <div className='calendar-date' key={i} onClick={() => {
+            <div className='calendar-date' key={i} tabIndex={i} onClick={() => {
                 dispatch({ type: 'SELECT_DATE', payload: { date: newDate, month: newMonth, day: newDay } });
                 setDaySelected({ selected: true, day: newDay })
             }
@@ -60,8 +61,8 @@ const SelectDate = (props) => {
     }
 
     const renderButton = (hour) => (
-        <Link to={`/booking/${props.match.params.activity}/${hour}/register`} onClick={() => dispatch({ type: 'SELECT_HOUR', payload: { hour: hour } })}>
-            <p className='date-size no-margin'>{hour}</p>
+        <Link className='link-hour' style={cssHour} to={`/booking/${props.match.params.activity}/${hour}/register`} onClick={() => dispatch({ type: 'SELECT_HOUR', payload: { hour: hour } })}>
+            <p className='hour-size no-margin'>{hour}</p>
         </Link>)
 
     const activityDay = {
@@ -99,11 +100,18 @@ const SelectDate = (props) => {
         return activityList[day];
     }
     const activityList = activityHours(activity, daySelected.day);
+    useEffect(() => {
+        if (daySelected.selected) {
+            setCssHour({ width: `${100 / activityList.length}%` })
+        }
+    }, [cssHour]);
+    const classname = daySelected.selected ? 'calendar-hour' : 'calendar-hour-disable';
+
     return (<div>
         <div className='calendar-container'>
             {dateList}
         </div>
-        <div className='calendar-hour'>
+        <div className={classname}>
             {daySelected.selected && activityList}
         </div>
     </div>

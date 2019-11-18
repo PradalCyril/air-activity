@@ -9,12 +9,12 @@ class HomePage extends Component {
   render() {
     return (
       <div className='home-container'>
-        <h2>Vos escales sont trop longues ? </h2>
-        <p style={{textAlign:'center'}}>{translate(this.props.language, 'definitionAirActivity1')}</p>
-        <p style={{textAlign:'center'}}>{translate(this.props.language, 'definitionAirActivity2')}</p>
-        <p style={{textAlign:'center'}}>{translate(this.props.language, 'definitionAirActivity3')}</p>
+        <h3 className='section-title' >Vos escales sont trop longues ? </h3>
+        <p style={{textAlign:'center', color:'black'}}>{translate(this.props.language, 'definitionAirActivity1')}</p>
+        <p style={{textAlign:'center', color:'black'}}>{translate(this.props.language, 'definitionAirActivity2')}</p>
+        <p style={{textAlign:'center', color:'black'}}>{translate(this.props.language, 'definitionAirActivity3')}</p>
         <Carousel />
-        <Link className='booking-link' to='/booking/select-activities'>{translate(this.props.language, 'bookingBtnHomePage')}</Link>
+        <Link className='booking-link' to='/booking/check-escale'>{translate(this.props.language, 'bookingBtnHomePage')}</Link>
       </div>
     )
   }

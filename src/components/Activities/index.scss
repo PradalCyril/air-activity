@@ -3,6 +3,7 @@
     align-items: center;
     margin:0 0 50px 0;
     height:100%;
+    color: black;
     border-top: 4px solid #294E6E ;
     border-bottom: 4px solid #C70B0C ;
     border-radius: 100px 0px 100px 0px;
@@ -42,12 +43,12 @@
 }
 .activities-title{
     text-align: center;
-    color: #C70B0C;
-    text-decoration: underline;
+    color:  #C70B0C;
+    text-decoration: underline black;
 }
 
 .activities-container{
-    color: #294E6E;
+    color: black;
 }
 
 .image-resize{
@@ -59,4 +60,11 @@
 .laser-option, .guide-tour-option, .escape-option{
     width:93%;
     font-size: 0.90em;
+    color: black;
 }
+
+.section-title{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    color: #C70B0C;
+  }

@@ -1,5 +1,65 @@
 $blue: #294E6E;
 .contact-container{
     padding: 10px 0 20px 10px;
-    color : $blue;
+    color : black;
 }
+
+
+.contact-section-title{
+    color: #C70B0C;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    width: fit-content;
+}
+
+.connexion-input{
+    &:focus{
+      outline: none;
+    }
+      font-size: 1em;
+      padding-left: 10px;
+      width: 35%;
+      height: 3em;
+      border-style: solid;
+      border-color: #294E6E;
+      border-width: 0 0 1px 0;
+      border-radius: 25px;
+      margin-bottom: 10px;
+    }
+
+    .connexion-input-area{
+        &:focus{
+          outline: none;
+        }
+          font-size: 1em;
+          padding: 10px 20px 10px 20px;
+          width: 75%;
+          height: 20em;
+          border-style: solid;
+          border-color: #294E6E;
+          border-width: 1px;
+          border-radius: 25px;
+          margin-bottom: 10px;
+        }
+.prise-de-contact{
+    cursor: not-allowed;
+    width: 200px;
+    font-size: 1rem;
+      margin-top: 10px;
+      text-decoration: none;
+      background: linear-gradient(90deg, transparent 50%, #C70B0C 50%);
+      background-size: 300%;
+      background-position: 0%;
+      transition: 0.5s;
+      position:relative;
+      color: #C70B0C;
+      padding:10px;
+      border: 1px solid #C70B0C;
+      &:hover, &:active{
+        background-position: 100%;
+        color: white;
+      }
+      &:focus{
+        outline: none;
+     }
+  }

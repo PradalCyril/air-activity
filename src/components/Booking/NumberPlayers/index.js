@@ -46,19 +46,42 @@ const NumberPlayer = (props) => {
             <Link className='booking-link taille' onMouseEnter={() => {
                 const prices = getPrice[props.match.params.activity]
                 setCount({ price: prices[2], players: 2 })
-            }} to={`/booking/${props.match.params.activity}/${props.match.params.hour}/register/2`}> 2 {translate(language, 'players')}</Link>
+            }}
+            onTouchStart={() => {
+                const prices = getPrice[props.match.params.activity]
+                setCount({ price: prices[2], players: 2 })
+            }}
+            to={`/booking/${props.match.params.activity}/${props.match.params.hour}/register/2`}> 2 {translate(language, 'players')}</Link>
             <Link className='booking-link taille' onMouseEnter={() => {
                 const prices = getPrice[props.match.params.activity]
                 setCount({ price: prices[3], players: 3 })
-            }} to={`/booking/${props.match.params.activity}/${props.match.params.hour}/register/3`}> 3 {translate(language, 'players')}</Link>
+            }}
+            onTouchStart={() => {
+                const prices = getPrice[props.match.params.activity]
+                setCount({ price: prices[3], players: 3 })
+            }}
+            to={`/booking/${props.match.params.activity}/${props.match.params.hour}/register/3`}> 3 {translate(language, 'players')}</Link>
             <Link className='booking-link taille' onMouseEnter={() => {
                 const prices = getPrice[props.match.params.activity]
                 setCount({ price: prices[4], players: 4 })
-            }} to={`/booking/${props.match.params.activity}/${props.match.params.hour}/register/4`}> 4 {translate(language, 'players')}</Link>
+            }}
+            onTouchStart={() => {
+                const prices = getPrice[props.match.params.activity]
+                setCount({ price: prices[4], players: 4 })
+            }}
+            to={`/booking/${props.match.params.activity}/${props.match.params.hour}/register/4`}> 4 {translate(language, 'players')}</Link>
             <Link className='booking-link taille' onMouseEnter={() => {
                 const prices = getPrice[props.match.params.activity]
                 setCount({ price: prices[5], players: 5 })
-            }} to={`/booking/${props.match.params.activity}/${props.match.params.hour}/register/5`}> 5 {translate(language, 'players')}</Link>
+            }}
+            onTouchStart={() => {
+                const prices = getPrice[props.match.params.activity]
+                setCount({ price: prices[5], players: 5 })
+            }}
+            to={`/booking/${props.match.params.activity}/${props.match.params.hour}/register/5`}
+            > 
+            5 {translate(language, 'players')}
+            </Link>
         </div>
         <div className='right-div-booking'>
             <div className='price-container'>

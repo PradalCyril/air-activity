@@ -9,10 +9,6 @@ import './index.scss';
 
 const images = [
     {
-        //title: "Vous avez plus de 4h d'escale ? ",
-        image: photo1
-    },
-    {
         image: photo2
     },
     {
@@ -20,6 +16,10 @@ const images = [
     },
     {
         image: photo4
+    },
+    {
+        //title: "Vous avez plus de 4h d'escale ? ",
+        image: photo1
     }
 ]
 const Carousel = () => (<div className='carousel-container'>< Slider infinite={true} autoplay={5000} >
@@ -32,7 +32,7 @@ const Carousel = () => (<div className='carousel-container'>< Slider infinite={t
             >
                 <div className="center">
                     <div className='left-div'>
-                       {article.data}
+                        {article.data}
                     </div>
                     <div className='right-div'>
                         <h1>{article.title}</h1>

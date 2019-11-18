@@ -8,11 +8,9 @@ const Teams = (props) => {
     const language = useSelector(state => state.user.language)
     return (
         <div className='teams-container'>
-            <h3 className='presentation-teams'>{translate(language, 'presentationTeam')}</h3>
+            <h3 className='presentation-teams section-name'>{translate(language, 'presentationTeam')}</h3>
             <div className='teams-displayer'>
-                <div
-                    className='teams-display'
-                >
+                <div className='teams-display'>
                     <div className='name-display'>
                         <h4 className='right-margin'>Sarah Abd-Ali</h4>
                         <p className='no-margin'>(22 ans)</p>
